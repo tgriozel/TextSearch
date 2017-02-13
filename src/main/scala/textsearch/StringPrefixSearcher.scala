@@ -42,7 +42,7 @@ class StringPrefixSearcher(words: Set[String], maxDepth: Int = 6) {
       }
   }
 
-  def getSomeWordsWithPrefix(prefix: String, count: Int): Set[String] = {
+  def getSomeWordsWithPrefix(prefix: String, count: Int = 4): Set[String] = {
     getSomeValuesFromValuesAndMap(getNodeWithPrefix(root, prefix.toLowerCase), count)
   }
 }
